@@ -33,7 +33,7 @@ export function roulette (element: HTMLButtonElement) {
             })
             return colorArr;
         } else {
-            return "#000000"
+            return "#ffffff"
         }
     }
 
@@ -46,19 +46,16 @@ export function roulette (element: HTMLButtonElement) {
             var lineNumber = []
             lineNumber.push(station.lines[0]);
             var lineColor = colorPicker(lineNumber, lineLength);
-            console.log(lineColor);
             lineDiv.innerHTML = `<span style="background-color:${lineColor};border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;color:#000000;">${lineNumber[0]}</span>`;
             
         } else if (lineLength > 1){
             var lineNumberArr = station.lines;
             var colorArr = colorPicker(lineNumberArr, lineLength);
-            console.log(colorArr);
             if (Array.isArray(colorArr)){
                 lineDiv.innerHTML = `<span style="background-color:${colorArr[0]};border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;color:#000000;">${lineNumberArr[0]}</span>
                     <span style="background-color:${colorArr[1]};border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;color:#000000;">${lineNumberArr[1]}</span>`
             }
         }
-        console.log(station.name)
     })
 
 }
