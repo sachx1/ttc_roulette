@@ -8,7 +8,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <p>Press the button below to select a random TTC Station and what is there do to around it</p>
     </div>
     <br>
-    <div id="result" style="color:white"></div>
+    <div id="lineNumber"></div>
+    <div id="station" style="color:white"></div>
     <button type="button" id="ttcroulette">Lets Play!</button>
 </section>
 `
