@@ -154,114 +154,885 @@
     }
   ],
   "stations": [
-    { "name": "Finch", "lines": [1] },
-    { "name": "North York Centre", "lines": [1] },
-    { "name": "Sheppard–Yonge", "lines": [1, 4] },
-    { "name": "York Mills", "lines": [1] },
-    { "name": "Lawrence", "lines": [1] },
-    { "name": "Eglinton", "lines": [1, 5] },
-    { "name": "Davisville", "lines": [1] },
-    { "name": "St. Clair", "lines": [1] },
-    { "name": "Summerhill", "lines": [1] },
-    { "name": "Rosedale", "lines": [1] },
-    { "name": "Bloor–Yonge", "lines": [1, 2] },
-    { "name": "Wellesley", "lines": [1] },
-    { "name": "College", "lines": [1] },
-    { "name": "TMU", "lines": [1] },
-    { "name": "Queen", "lines": [1] },
-    { "name": "King", "lines": [1] },
-    { "name": "Union", "lines": [1] },
-    { "name": "St. Andrew", "lines": [1] },
-    { "name": "Osgoode", "lines": [1] },
-    { "name": "St. Patrick", "lines": [1] },
-    { "name": "Queen's Park", "lines": [1] },
-    { "name": "Museum", "lines": [1] },
-    { "name": "St. George", "lines": [1, 2] },
-    { "name": "Spadina", "lines": [1, 2] },
-    { "name": "Dupont", "lines": [1] },
-    { "name": "St. Clair West", "lines": [1] },
-    { "name": "Cedarvale", "lines": [1, 5] },
-    { "name": "Glencairn", "lines": [1] },
-    { "name": "Lawrence West", "lines": [1] },
-    { "name": "Yorkdale", "lines": [1] },
-    { "name": "Wilson", "lines": [1] },
-    { "name": "Sheppard West", "lines": [1] },
-    { "name": "Downsview Park", "lines": [1] },
-    { "name": "Finch West", "lines": [1, 6] },
-    { "name": "York University", "lines": [1] },
-    { "name": "Pioneer Village", "lines": [1] },
-    { "name": "Highway 407", "lines": [1] },
-    { "name": "Vaughan Metropolitan Centre", "lines": [1] },
-    { "name": "Kipling", "lines": [2] },
-    { "name": "Islington", "lines": [2] },
-    { "name": "Royal York", "lines": [2] },
-    { "name": "Old Mill", "lines": [2] },
-    { "name": "Jane", "lines": [2] },
-    { "name": "Runnymede", "lines": [2] },
-    { "name": "High Park", "lines": [2] },
-    { "name": "Keele", "lines": [2] },
-    { "name": "Dundas West", "lines": [2] },
-    { "name": "Lansdowne", "lines": [2] },
-    { "name": "Dufferin", "lines": [2] },
-    { "name": "Ossington", "lines": [2] },
-    { "name": "Christie", "lines": [2] },
-    { "name": "Bathurst", "lines": [2] },
-    { "name": "Bay", "lines": [2] },
-    { "name": "Sherbourne", "lines": [2] },
-    { "name": "Castle Frank", "lines": [2] },
-    { "name": "Broadview", "lines": [2] },
-    { "name": "Chester", "lines": [2] },
-    { "name": "Pape", "lines": [2] },
-    { "name": "Donlands", "lines": [2] },
-    { "name": "Greenwood", "lines": [2] },
-    { "name": "Coxwell", "lines": [2] },
-    { "name": "Woodbine", "lines": [2] },
-    { "name": "Main Street", "lines": [2] },
-    { "name": "Victoria Park", "lines": [2] },
-    { "name": "Warden", "lines": [2] },
-    { "name": "Kennedy", "lines": [2, 5] },
-    { "name": "Bayview", "lines": [4] },
-    { "name": "Bessarion", "lines": [4] },
-    { "name": "Leslie", "lines": [4] },
-    { "name": "Don Mills", "lines": [4] },
-    { "name": "Mount Dennis", "lines": [5] },
-    { "name": "Keelesdale", "lines": [5] },
-    { "name": "Caledonia", "lines": [5] },
-    { "name": "Fairbank", "lines": [5] },
-    { "name": "Oakwood", "lines": [5] },
-    { "name": "Forest Hill", "lines": [5] },
-    { "name": "Chaplin", "lines": [5] },
-    { "name": "Avenue", "lines": [5] },
-    { "name": "Mount Pleasant", "lines": [5] },
-    { "name": "Leaside", "lines": [5] },
-    { "name": "Laird", "lines": [5] },
-    { "name": "Sunnybrook Park", "lines": [5] },
-    { "name": "Don Valley", "lines": [5] },
-    { "name": "Aga Khan Park & Museum", "lines": [5] },
-    { "name": "Wynford", "lines": [5] },
-    { "name": "Sloane", "lines": [5] },
-    { "name": "O'Connor", "lines": [5] },
-    { "name": "Pharmacy", "lines": [5] },
-    { "name": "Hakimi Lebovic", "lines": [5] },
-    { "name": "Golden Mile", "lines": [5] },
-    { "name": "Birchmount", "lines": [5] },
-    { "name": "Ionview", "lines": [5] },
-    { "name": "Sentinel", "lines": [6] },
-    { "name": "Tobermory", "lines": [6] },
-    { "name": "Driftwood", "lines": [6] },
-    { "name": "Jane and Finch", "lines": [6] },
-    { "name": "Norfinch Oakdale", "lines": [6] },
-    { "name": "Signet Arrow", "lines": [6] },
-    { "name": "Emery", "lines": [6] },
-    { "name": "Milvan Rumike", "lines": [6] },
-    { "name": "Duncanwoods", "lines": [6] },
-    { "name": "Pearldale", "lines": [6] },
-    { "name": "Rowntree Mills", "lines": [6] },
-    { "name": "Mount Olive", "lines": [6] },
-    { "name": "Stevenson", "lines": [6] },
-    { "name": "Albion", "lines": [6] },
-    { "name": "Martin Grove", "lines": [6] },
-    { "name": "Westmore", "lines": [6] },
-    { "name": "Humber College", "lines": [6] }
+    {
+      "name": "Finch",
+      "lines": [
+        1
+      ],
+      "lat": 43.780147,
+      "lng": -79.415692
+    },
+    {
+      "name": "North York Centre",
+      "lines": [
+        1
+      ],
+      "lat": 43.767347,
+      "lng": -79.412492
+    },
+    {
+      "name": "Sheppard–Yonge",
+      "lines": [
+        1,
+        4
+      ],
+      "lat": 43.760348,
+      "lng": -79.410691
+    },
+    {
+      "name": "York Mills",
+      "lines": [
+        1
+      ],
+      "lat": 43.743248,
+      "lng": -79.405991
+    },
+    {
+      "name": "Lawrence",
+      "lines": [
+        1
+      ],
+      "lat": 43.725348,
+      "lng": -79.40229
+    },
+    {
+      "name": "Eglinton",
+      "lines": [
+        1,
+        5
+      ],
+      "lat": 43.704648,
+      "lng": -79.39889
+    },
+    {
+      "name": "Davisville",
+      "lines": [
+        1
+      ],
+      "lat": 43.697048,
+      "lng": -79.39689
+    },
+    {
+      "name": "St. Clair",
+      "lines": [
+        1
+      ],
+      "lat": 43.687449,
+      "lng": -79.393089
+    },
+    {
+      "name": "Summerhill",
+      "lines": [
+        1
+      ],
+      "lat": 43.682049,
+      "lng": -79.390789
+    },
+    {
+      "name": "Rosedale",
+      "lines": [
+        1
+      ],
+      "lat": 43.676049,
+      "lng": -79.388089
+    },
+    {
+      "name": "Bloor–Yonge",
+      "lines": [
+        1,
+        2
+      ],
+      "lat": 43.670049,
+      "lng": -79.385389
+    },
+    {
+      "name": "Wellesley",
+      "lines": [
+        1
+      ],
+      "lat": 43.664949,
+      "lng": -79.383488
+    },
+    {
+      "name": "College",
+      "lines": [
+        1
+      ],
+      "lat": 43.660149,
+      "lng": -79.382688
+    },
+    {
+      "name": "TMU",
+      "lines": [
+        1
+      ],
+      "lat": 43.655949,
+      "lng": -79.380788
+    },
+    {
+      "name": "Queen",
+      "lines": [
+        1
+      ],
+      "lat": 43.652149,
+      "lng": -79.379188
+    },
+    {
+      "name": "King",
+      "lines": [
+        1
+      ],
+      "lat": 43.648449,
+      "lng": -79.377688
+    },
+    {
+      "name": "Union",
+      "lines": [
+        1
+      ],
+      "lat": 43.645549,
+      "lng": -79.381488
+    },
+    {
+      "name": "St. Andrew",
+      "lines": [
+        1
+      ],
+      "lat": 43.648249,
+      "lng": -79.385088
+    },
+    {
+      "name": "Osgoode",
+      "lines": [
+        1
+      ],
+      "lat": 43.651749,
+      "lng": -79.386888
+    },
+    {
+      "name": "St. Patrick",
+      "lines": [
+        1
+      ],
+      "lat": 43.655249,
+      "lng": -79.388388
+    },
+    {
+      "name": "Queen's Park",
+      "lines": [
+        1
+      ],
+      "lat": 43.660549,
+      "lng": -79.390689
+    },
+    {
+      "name": "Museum",
+      "lines": [
+        1
+      ],
+      "lat": 43.667249,
+      "lng": -79.393389
+    },
+    {
+      "name": "St. George",
+      "lines": [
+        1,
+        2
+      ],
+      "lat": 43.668249,
+      "lng": -79.399689
+    },
+    {
+      "name": "Spadina",
+      "lines": [
+        1,
+        2
+      ],
+      "lat": 43.670249,
+      "lng": -79.405189
+    },
+    {
+      "name": "Dupont",
+      "lines": [
+        1
+      ],
+      "lat": 43.674949,
+      "lng": -79.40709
+    },
+    {
+      "name": "St. Clair West",
+      "lines": [
+        1
+      ],
+      "lat": 43.685148,
+      "lng": -79.41589
+    },
+    {
+      "name": "Cedarvale",
+      "lines": [
+        1,
+        5
+      ],
+      "lat": 43.700648,
+      "lng": -79.436691
+    },
+    {
+      "name": "Glencairn",
+      "lines": [
+        1
+      ],
+      "lat": 43.709148,
+      "lng": -79.440892
+    },
+    {
+      "name": "Lawrence West",
+      "lines": [
+        1
+      ],
+      "lat": 43.715784,
+      "lng": -79.444038
+    },
+    {
+      "name": "Yorkdale",
+      "lines": [
+        1
+      ],
+      "lat": 43.725248,
+      "lng": -79.447692
+    },
+    {
+      "name": "Wilson",
+      "lines": [
+        1
+      ],
+      "lat": 43.735048,
+      "lng": -79.450192
+    },
+    {
+      "name": "Sheppard West",
+      "lines": [
+        1
+      ],
+      "lat": 43.750204,
+      "lng": -79.462781
+    },
+    {
+      "name": "Downsview Park",
+      "lines": [
+        1
+      ],
+      "lat": 43.753311,
+      "lng": -79.478693
+    },
+    {
+      "name": "Finch West",
+      "lines": [
+        1,
+        6
+      ],
+      "lat": 43.764855,
+      "lng": -79.491118
+    },
+    {
+      "name": "York University",
+      "lines": [
+        1
+      ],
+      "lat": 43.774097,
+      "lng": -79.499888
+    },
+    {
+      "name": "Pioneer Village",
+      "lines": [
+        1
+      ],
+      "lat": 43.776741,
+      "lng": -79.509334
+    },
+    {
+      "name": "Highway 407",
+      "lines": [
+        1
+      ],
+      "lat": 43.783359,
+      "lng": -79.523454
+    },
+    {
+      "name": "Vaughan Metropolitan Centre",
+      "lines": [
+        1
+      ],
+      "lat": 43.794021,
+      "lng": -79.527906
+    },
+    {
+      "name": "Kipling",
+      "lines": [
+        2
+      ],
+      "lat": 43.637648,
+      "lng": -79.535694
+    },
+    {
+      "name": "Islington",
+      "lines": [
+        2
+      ],
+      "lat": 43.645548,
+      "lng": -79.523293
+    },
+    {
+      "name": "Royal York",
+      "lines": [
+        2
+      ],
+      "lat": 43.648548,
+      "lng": -79.508693
+    },
+    {
+      "name": "Old Mill",
+      "lines": [
+        2
+      ],
+      "lat": 43.649448,
+      "lng": -79.493392
+    },
+    {
+      "name": "Jane",
+      "lines": [
+        2
+      ],
+      "lat": 43.650149,
+      "lng": -79.482892
+    },
+    {
+      "name": "Runnymede",
+      "lines": [
+        2
+      ],
+      "lat": 43.652049,
+      "lng": -79.474992
+    },
+    {
+      "name": "High Park",
+      "lines": [
+        2
+      ],
+      "lat": 43.653849,
+      "lng": -79.466991
+    },
+    {
+      "name": "Keele",
+      "lines": [
+        2
+      ],
+      "lat": 43.655649,
+      "lng": -79.458691
+    },
+    {
+      "name": "Dundas West",
+      "lines": [
+        2
+      ],
+      "lat": 43.657449,
+      "lng": -79.451091
+    },
+    {
+      "name": "Lansdowne",
+      "lines": [
+        2
+      ],
+      "lat": 43.659246,
+      "lng": -79.442463
+    },
+    {
+      "name": "Dufferin",
+      "lines": [
+        2
+      ],
+      "lat": 43.660849,
+      "lng": -79.43389
+    },
+    {
+      "name": "Ossington",
+      "lines": [
+        2
+      ],
+      "lat": 43.662349,
+      "lng": -79.42609
+    },
+    {
+      "name": "Christie",
+      "lines": [
+        2
+      ],
+      "lat": 43.664449,
+      "lng": -79.41729
+    },
+    {
+      "name": "Bathurst",
+      "lines": [
+        2
+      ],
+      "lat": 43.665949,
+      "lng": -79.410589
+    },
+    {
+      "name": "Bay",
+      "lines": [
+        2
+      ],
+      "lat": 43.670149,
+      "lng": -79.390089
+    },
+    {
+      "name": "Sherbourne",
+      "lines": [
+        2
+      ],
+      "lat": 43.672103,
+      "lng": -79.376162
+    },
+    {
+      "name": "Castle Frank",
+      "lines": [
+        2
+      ],
+      "lat": 43.674049,
+      "lng": -79.368088
+    },
+    {
+      "name": "Broadview",
+      "lines": [
+        2
+      ],
+      "lat": 43.677049,
+      "lng": -79.358088
+    },
+    {
+      "name": "Chester",
+      "lines": [
+        2
+      ],
+      "lat": 43.678241,
+      "lng": -79.352502
+    },
+    {
+      "name": "Pape",
+      "lines": [
+        2
+      ],
+      "lat": 43.679949,
+      "lng": -79.344087
+    },
+    {
+      "name": "Donlands",
+      "lines": [
+        2
+      ],
+      "lat": 43.681149,
+      "lng": -79.337487
+    },
+    {
+      "name": "Greenwood",
+      "lines": [
+        2
+      ],
+      "lat": 43.682549,
+      "lng": -79.331687
+    },
+    {
+      "name": "Coxwell",
+      "lines": [
+        2
+      ],
+      "lat": 43.684549,
+      "lng": -79.321986
+    },
+    {
+      "name": "Woodbine",
+      "lines": [
+        2
+      ],
+      "lat": 43.686649,
+      "lng": -79.312286
+    },
+    {
+      "name": "Main Street",
+      "lines": [
+        2
+      ],
+      "lat": 43.689249,
+      "lng": -79.300686
+    },
+    {
+      "name": "Victoria Park",
+      "lines": [
+        2
+      ],
+      "lat": 43.695149,
+      "lng": -79.287885
+    },
+    {
+      "name": "Warden",
+      "lines": [
+        2
+      ],
+      "lat": 43.712149,
+      "lng": -79.278785
+    },
+    {
+      "name": "Kennedy",
+      "lines": [
+        2,
+        5
+      ],
+      "lat": 43.732487,
+      "lng": -79.263718
+    },
+    {
+      "name": "Bayview",
+      "lines": [
+        4
+      ],
+      "lat": 43.766872,
+      "lng": -79.386703
+    },
+    {
+      "name": "Bessarion",
+      "lines": [
+        4
+      ],
+      "lat": 43.769202,
+      "lng": -79.376312
+    },
+    {
+      "name": "Leslie",
+      "lines": [
+        4
+      ],
+      "lat": 43.771348,
+      "lng": -79.36499
+    },
+    {
+      "name": "Don Mills",
+      "lines": [
+        4
+      ],
+      "lat": 43.775547,
+      "lng": -79.346584
+    },
+    {
+      "name": "Mount Dennis",
+      "lines": [
+        5
+      ],
+      "lat": 43.688025,
+      "lng": -79.485789
+    },
+    {
+      "name": "Keelesdale",
+      "lines": [
+        5
+      ],
+      "lat": 43.690413,
+      "lng": -79.474533
+    },
+    {
+      "name": "Caledonia",
+      "lines": [
+        5
+      ],
+      "lat": 43.692324,
+      "lng": -79.465079
+    },
+    {
+      "name": "Fairbank",
+      "lines": [
+        5
+      ],
+      "lat": 43.695744,
+      "lng": -79.44926
+    },
+    {
+      "name": "Oakwood",
+      "lines": [
+        5
+      ],
+      "lat": 43.697429,
+      "lng": -79.442726
+    },
+    {
+      "name": "Forest Hill",
+      "lines": [
+        5
+      ],
+      "lat": 43.701136,
+      "lng": -79.425086
+    },
+    {
+      "name": "Chaplin",
+      "lines": [
+        5
+      ],
+      "lat": 43.702913,
+      "lng": -79.417098
+    },
+    {
+      "name": "Avenue",
+      "lines": [
+        5
+      ],
+      "lat": 43.704723,
+      "lng": -79.408728
+    },
+    {
+      "name": "Mount Pleasant",
+      "lines": [
+        5
+      ],
+      "lat": 43.708503,
+      "lng": -79.390329
+    },
+    {
+      "name": "Leaside",
+      "lines": [
+        5
+      ],
+      "lat": 43.710767,
+      "lng": -79.376475
+    },
+    {
+      "name": "Laird",
+      "lines": [
+        5
+      ],
+      "lat": 43.713199,
+      "lng": -79.364733
+    },
+    {
+      "name": "Sunnybrook Park",
+      "lines": [
+        5
+      ],
+      "lat": 43.717392,
+      "lng": -79.34872
+    },
+    {
+      "name": "Don Valley",
+      "lines": [
+        5
+      ],
+      "lat": 43.719956,
+      "lng": -79.338946
+    },
+    {
+      "name": "Aga Khan Park & Museum",
+      "lines": [
+        5
+      ],
+      "lat": 43.722496,
+      "lng": -79.332284
+    },
+    {
+      "name": "Wynford",
+      "lines": [
+        5
+      ],
+      "lat": 43.724139,
+      "lng": -79.326236
+    },
+    {
+      "name": "Sloane",
+      "lines": [
+        5
+      ],
+      "lat": 43.725837,
+      "lng": -79.312252
+    },
+    {
+      "name": "O'Connor",
+      "lines": [
+        5
+      ],
+      "lat": 43.72482,
+      "lng": -79.301367
+    },
+    {
+      "name": "Pharmacy",
+      "lines": [
+        5
+      ],
+      "lat": 43.725881,
+      "lng": -79.296325
+    },
+    {
+      "name": "Hakimi Lebovic",
+      "lines": [
+        5
+      ],
+      "lat": 43.727226,
+      "lng": -79.290298
+    },
+    {
+      "name": "Golden Mile",
+      "lines": [
+        5
+      ],
+      "lat": 43.7281,
+      "lng": -79.286352
+    },
+    {
+      "name": "Birchmount",
+      "lines": [
+        5
+      ],
+      "lat": 43.730223,
+      "lng": -79.276636
+    },
+    {
+      "name": "Ionview",
+      "lines": [
+        5
+      ],
+      "lat": 43.731366,
+      "lng": -79.271673
+    },
+    {
+      "name": "Sentinel",
+      "lines": [
+        6
+      ],
+      "lat": 43.761085,
+      "lng": -79.499846
+    },
+    {
+      "name": "Tobermory",
+      "lines": [
+        6
+      ],
+      "lat": 43.759309,
+      "lng": -79.507742
+    },
+    {
+      "name": "Driftwood",
+      "lines": [
+        6
+      ],
+      "lat": 43.758068,
+      "lng": -79.51316
+    },
+    {
+      "name": "Jane and Finch",
+      "lines": [
+        6
+      ],
+      "lat": 43.757205,
+      "lng": -79.517421
+    },
+    {
+      "name": "Norfinch Oakdale",
+      "lines": [
+        6
+      ],
+      "lat": 43.755953,
+      "lng": -79.524004
+    },
+    {
+      "name": "Signet Arrow",
+      "lines": [
+        6
+      ],
+      "lat": 43.753302,
+      "lng": -79.53593
+    },
+    {
+      "name": "Emery",
+      "lines": [
+        6
+      ],
+      "lat": 43.752088,
+      "lng": -79.542106
+    },
+    {
+      "name": "Milvan Rumike",
+      "lines": [
+        6
+      ],
+      "lat": 43.749999,
+      "lng": -79.552029
+    },
+    {
+      "name": "Duncanwoods",
+      "lines": [
+        6
+      ],
+      "lat": 43.748853,
+      "lng": -79.557338
+    },
+    {
+      "name": "Pearldale",
+      "lines": [
+        6
+      ],
+      "lat": 43.747724,
+      "lng": -79.562493
+    },
+    {
+      "name": "Rowntree Mills",
+      "lines": [
+        6
+      ],
+      "lat": 43.746365,
+      "lng": -79.568298
+    },
+    {
+      "name": "Mount Olive",
+      "lines": [
+        6
+      ],
+      "lat": 43.74327,
+      "lng": -79.58177
+    },
+    {
+      "name": "Stevenson",
+      "lines": [
+        6
+      ],
+      "lat": 43.743185,
+      "lng": -79.586943
+    },
+    {
+      "name": "Albion",
+      "lines": [
+        6
+      ],
+      "lat": 43.741404,
+      "lng": -79.589034
+    },
+    {
+      "name": "Martin Grove",
+      "lines": [
+        6
+      ],
+      "lat": 43.736708,
+      "lng": -79.591916
+    },
+    {
+      "name": "Westmore",
+      "lines": [
+        6
+      ],
+      "lat": 43.734701,
+      "lng": -79.60071
+    },
+    {
+      "name": "Humber College",
+      "lines": [
+        6
+      ],
+      "lat": 43.729905,
+      "lng": -79.601445
+    }
   ]
 }

@@ -1,5 +1,6 @@
 import './style.css'
 import { roulette } from './randomLogic'
+import './places'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">
@@ -11,6 +12,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div id="lineNumber"></div>
     <div id="station" style="color:white"></div>
     <button type="button" id="ttcroulette">Lets Play!</button>
+    <select id="category-select">
+        <option value="restaurants">Restaurants</option>
+        <option value="parks">Parks</option>
+        <option value="cafes">Cafes</option>
+    </select>
 </section>
 `
 
