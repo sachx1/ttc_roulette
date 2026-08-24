@@ -19,7 +19,7 @@ export async function getRecommendations(station: { lat: number, lng: number }){
 
 async function getNearbyPlaces(station: { lat: number, lng: number }, types: string[]) {
   const request = {
-    fields: ['displayName', 'formattedAddress', 'rating'],
+    fields: ['displayName', 'formattedAddress', 'rating', 'googleMapsURI'],
     locationRestriction: {
       center: { lat: station.lat, lng: station.lng },
       radius: 1500, //500 METERS

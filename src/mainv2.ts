@@ -17,6 +17,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <option value="parks">Parks</option>
         <option value="cafes">Cafes</option>
     </select>
+    <div id="results"></div>
 </section>
 `
 

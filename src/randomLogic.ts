@@ -2,11 +2,31 @@ import stationsData from './data/stations.json'
 import { getRecommendations } from './places'
 
 export function roulette (element: HTMLButtonElement) {
+    let currentData: { restaurants: any[], parks: any[], cafes: any[] } | null = null
     var stations = stationsData.stations; //This is a variable that maps to the stations object in the json
     var colors = stationsData.lines;
     var stationDiv = document.querySelector<HTMLDivElement>('#station')! //This spits out the station name in the main.ts
     var lineDiv = document.querySelector<HTMLDivElement>('#lineNumber')! //this spits out the station number in the main.ts
     var recDiv = document.querySelector<HTMLDivElement>('#results')! //this spits out information for recommendations
+
+    /*//this is a shared function from both listeners. Updates dom after a new station is picked
+        the other updates it whenever the user flips the dropdown, without needed to re fetch anything
+        from the api
+    */
+    var categorySelect = document.querySelector<HTMLSelectElement>('#category-select')! 
+
+    function renderCategory(category: string) {
+        if (!currentData) return
+        const places = currentData[category as keyof typeof currentData]
+        recDiv.innerHTML = places.map((place) => `
+            <div class="place-card">
+                <h3>${place.displayName}</h3>
+                <p class="place-address">${place.formattedAddress}</p>
+                <p class="place-rating">⭐ ${place.rating ?? 'No rating'}</p>
+                <a href="${place.googleMapsURI}" target="_blank">View on Google Maps</a>
+            </div>
+        `).join('');
+    }
 
     //this is the logic that picks a random station
     const pickRandomStation = () => {
@@ -65,8 +85,12 @@ export function roulette (element: HTMLButtonElement) {
 
         }
         
-        var data = await getRecommendations(station);
-        
+        currentData = await getRecommendations(station);
+        renderCategory(categorySelect.value)
+    })
+
+    categorySelect.addEventListener('change', () => {
+        renderCategory(categorySelect.value);
     })
 
 }
