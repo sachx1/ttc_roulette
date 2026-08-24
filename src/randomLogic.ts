@@ -6,8 +6,7 @@ export function roulette (element: HTMLButtonElement) {
     var colors = stationsData.lines;
     var stationDiv = document.querySelector<HTMLDivElement>('#station')! //This spits out the station name in the main.ts
     var lineDiv = document.querySelector<HTMLDivElement>('#lineNumber')! //this spits out the station number in the main.ts
-    var restDiv = document.querySelector<HTMLDivElement>('#restaurant')!
-    var cafeDiv = document.querySelector<HTMLDivElement>('#cafes')!
+    var recDiv = document.querySelector<HTMLDivElement>('#results')! //this spits out information for recommendations
 
     //this is the logic that picks a random station
     const pickRandomStation = () => {
