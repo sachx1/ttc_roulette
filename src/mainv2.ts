@@ -8,7 +8,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <button type="button" id="theme-toggle">🌙</button>
 </div>
 <section id="center">
-    <div>
+    <div id="header-box">
         <h1 id="TTCHeading">TTC Roulette Unlimited</h1>
         <p>Press the button below to select a random TTC Station and what is there do to around it</p>
     </div>

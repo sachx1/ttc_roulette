@@ -15,6 +15,12 @@ export function roulette (element: HTMLButtonElement) {
     */
     var categorySelect = document.querySelector<HTMLSelectElement>('#category-select')! 
 
+    const playPopIn = (el: HTMLElement) => {
+        el.classList.remove('pop-in')
+        void el.offsetWidth // forces the browser to recalculate layout before continuing
+        el.classList.add('pop-in')
+    }
+
     function renderCategory(category: string) {
         if (!currentData) return
         const places = currentData[category as keyof typeof currentData]
@@ -26,6 +32,7 @@ export function roulette (element: HTMLButtonElement) {
                 <a href="${place.googleMapsURI}" target="_blank">View on Google Maps</a>
             </div>
         `).join('');
+        playPopIn(recDiv);
     }
 
     //this is the logic that picks a random station
@@ -65,6 +72,7 @@ export function roulette (element: HTMLButtonElement) {
     element.addEventListener('click', async () => {
         const station = pickRandomStation()
         stationDiv.textContent = station.name;
+        playPopIn(stationDiv)
         var lineLength = station.lines.length;
 
         if (lineLength == 1){
@@ -73,6 +81,7 @@ export function roulette (element: HTMLButtonElement) {
             lineNumber.push(station.lines[0]);
             var lineColor = colorPicker(lineNumber, lineLength);
             lineDiv.innerHTML = `<span style="background-color:${lineColor};border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;color:#000000;">${lineNumber[0]}</span>`;
+            playPopIn(lineDiv)
             
         } else if (lineLength > 1){
 
@@ -81,6 +90,7 @@ export function roulette (element: HTMLButtonElement) {
             if (Array.isArray(colorArr)){
                 lineDiv.innerHTML = `<span style="background-color:${colorArr[0]};border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;color:#000000;">${lineNumberArr[0]}</span>
                     <span style="background-color:${colorArr[1]};border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;color:#000000;">${lineNumberArr[1]}</span>`
+                playPopIn(lineDiv)
             }
 
         }
