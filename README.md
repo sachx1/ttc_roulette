@@ -71,3 +71,7 @@ The site is deployed to Firebase Hosting from the `dist/` folder:
 npm run build
 firebase deploy
 ```
+
+## License
+
+This repository has no open-source license, so all rights to the code are reserved by the authors — it isn't licensed for reuse.
