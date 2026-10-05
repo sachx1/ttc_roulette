@@ -51,7 +51,12 @@
   }
 }
 
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
 :root[data-theme='dark'] {
+  color-scheme: dark;
   --text: #9ca3af;
   --text-h: #f3f4f6;
   --bg: #16171d;
@@ -411,7 +416,8 @@ code {
 }
 
 #ttcroulette,
-.home-buttons button {
+.home-buttons button,
+#search-bar button {
   font-family: var(--sans);
   font-size: 18px;
   font-weight: 600;
@@ -444,6 +450,51 @@ code {
 
   button {
     min-width: 150px;
+  }
+}
+
+#search-bar {
+  width: 100%;
+  max-width: 560px;
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  label {
+    flex-basis: 100%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-h);
+  }
+
+  input {
+    flex: 1;
+    min-width: 0;
+    appearance: none;
+    font-family: var(--sans);
+    font-size: 16px;
+    color: var(--text-h);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+
+    &::placeholder {
+      color: var(--text);
+    }
+    &:hover {
+      border-color: var(--accent-border);
+    }
+    &:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-bg);
+    }
   }
 }
 
