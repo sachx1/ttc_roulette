@@ -1,15 +1,19 @@
 # TTC Roulette
 
-A little web app that picks a random TTC (Toronto Transit Commission) subway station for you and suggests nearby restaurants, parks, and cafes to check out — using the Google Places API.
+A little web app for exploring Toronto by subway: spin for a random TTC (Toronto Transit Commission) station or search for a specific one, and get nearby restaurants, parks, and cafes to check out — using the Google Places API.
 
 Live at: https://ttcroulette-50eba.web.app (Firebase Hosting)
 
-## How it works
+## Features
 
-1. Click **"Lets Play!"** to pick a random subway station from the TTC line data.
-2. The station name and its subway line indicator(s) are displayed.
-3. Nearby places are fetched from Google Places and shown under the category you have selected (Restaurants, Parks, or Cafes) — switching the dropdown re-renders the list without a new API call.
-4. Toggle between light and dark theme with the 🌙 button (saved to `localStorage`).
+- **Homepage** — choose between Roulette mode and Search mode.
+- **Roulette mode** (`/roulette`) — click **"Lets Play!"** to pick a random subway station. You get the station name, its subway line badge(s), and nearby places from Google Places for the selected category (Restaurants, Parks, or Cafes). Switching the category re-renders the list without a new API call.
+- **Search mode** (`/search`) — *in progress.* Type a station name, pick it from live suggestions, and see the same station details and nearby places as Roulette mode.
+- **Light/dark theme** — toggle with the 🌙 button; your choice is saved to `localStorage`.
+
+### Planned
+
+- **More cities** — expand beyond Toronto's TTC to other cities' transit systems.
 
 ## Tech stack
 
@@ -21,13 +25,20 @@ Live at: https://ttcroulette-50eba.web.app (Firebase Hosting)
 
 ```
 src/
-  mainv2.ts          # app entry point (renders the UI, wires up roulette + theme toggle)
+  mainv2.ts           # app entry point: renders the theme toggle + page container, starts the router
+  router.ts           # client-side routing between /, /roulette and /search (History API)
+  home.ts             # homepage with the Roulette / Search mode buttons
+  roulette.ts         # roulette page ("Lets Play!" button, station details, nearby places)
+  search.ts           # search page (in progress)
   randomLogic.ts      # picks a random station, renders line color badges and place cards
+  stations.ts         # station data helpers (random pick, search by name)
   places.ts           # Google Places API calls (nearby restaurants/parks/cafes)
-  toggleDisplay.ts     # light/dark theme toggle
+  toggleDisplay.ts    # light/dark theme toggle
   data/stations.json  # TTC station names, coordinates, and line/colour data
   style.css
 ```
+
+Pages are swapped in place by `router.ts` without a full page reload. Firebase Hosting rewrites every path to `index.html` (see `firebase.json`), so URLs like `/search` also work when opened directly or refreshed.
 
 ## Getting started
 
